@@ -1,0 +1,227 @@
+@CHARSET "ISO-8859-1";
+
+
+/*JQuery connct to div with one line*/
+
+
+body {
+  background-color: Gainsboro;
+}
+/*#outer {
+  margin: 20px 20px 20px 20px;
+  width: 500px;
+}*/
+
+div.ebene {
+  margin: 10px 10px 10px 10px;
+  position: relative;
+  width: 3000px;
+  height: 600px;
+  /*background-color: Gainsboro;*/
+}
+
+/*#svgContainer {
+  z-index: -10;
+  position: absolute;
+  /*background-color: gray;
+  opacity: 0.5;
+}*/
+
+  /*div {
+    background: rgb(255, 255, 255);
+    background: rgba(255, 255, 255, 0.7);
+    float: left;
+    min-width: 4em;
+    min-height: 3em;
+    max-width: 29ex;
+    margin: 3em;
+    padding: 1em;
+    border: 1px solid rgb(200, 200, 200);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 16px;
+    box-shadow: 2px 5px 5px rgba(0,0,0,0.2);
+  }*/
+connection {
+  z-index: -1;
+  border: 3px solid;
+  border-radius: 280px;
+  color: rgb(128, 128, 128);
+  color: rgba(0, 0, 0, 0.5);
+}
+
+#ebene1 {
+ 
+}
+#ebene2 {
+}
+#ebene3 {
+}
+#ebene4 {
+}
+#ebene5 {
+}
+
+div.male {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+}
+
+div.female {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+}
+
+div.person {
+  width: 300px;
+  height: 80px;
+  border-style: solid;
+  border-width: medium;
+  margin: 10px 10px 10px 10px;
+}
+/*Gennadi Heimann*/
+#person_1 {
+  position: absolute;
+  top: 10px;
+  left: 10px
+}
+/*Ludmila Heimann*/
+#person_9 {
+  position: absolute;
+  left: 450px;
+  top: 10px;
+}
+/*Artiom Heimann*/
+#person_2 {
+  position: absolute;
+  top: 450px;
+  left: 10px;
+}
+/*Aljona Heimann*/
+#person_3 {
+  position: absolute;
+  left: 450px;
+  top: 450px;
+}
+/*Kevin Heimann*/
+#person_4 {
+  position: absolute;
+  left: 670px;
+  top: 100px;
+}
+/*Julia Heimann*/
+#person_5 {
+  position: absolute;
+  left: 1000px;
+  top: 100px;
+}
+/*Richard Rein*/
+#person_6 {
+  position: absolute;
+  left: 1330px;
+  top: 100px;
+}
+/*Ivon Rein*/
+#person_7 {
+  position: absolute;
+  left: 1660px;
+  top: 100px;
+}
+/*David Heimann*/
+#person_8 {
+  position: absolute;
+  left: 1990px;
+  top: 100px;
+}
+
+
+/*body {
+	background-color: lightblue;
+}*/
+
+/*#peronely {
+	background-color: green;
+	height: 300px;
+	position: static;
+    left: 30px;
+    right: 30px;
+    border: 3px solid #73AD21;
+}
+#techonlogy{
+	background-color: red;
+	height: 300px;
+	position: static;
+    left: 30px;
+    right: 30px;
+    border: 3px solid #73AD21;
+}  
+#kompetenz {
+	background-color: yellow;
+	height: 300px;
+	position: static;
+    left: 30px;
+    right: 30px;
+    border: 3px solid #73AD21;
+}
+
+#konfigurator{
+	background-color: lightblue;
+	height: 300px;
+	position: static;
+    left: 30px;
+    right: 30px;
+    border: 3px solid #73AD21;
+}
+
+#footer{
+	background-color: lightblue;
+	height: 300px;
+	position: static;
+    left: 30px;
+    right: 30px;
+    border: 3px solid #73AD21;
+}*/
+
+
+
+
+
+/*#content{
+  position:relative;
+}
+.mydiv{
+  border:1px solid #368ABB;
+  background-color:#43A4DC;
+  position:absolute;
+}
+.mydiv:after{
+  content:no-close-quote;
+  position:absolute;
+  top:50%;
+  left:50%;
+  background-color:black;
+  width:4px;
+  height:4px;
+  border-radius:50%;
+  margin-left:-2px;
+  margin-top:-2px;
+}
+#div1{
+  left:200px;
+  top:200px;
+  width:50px;
+  height:50px;
+}
+#div2{
+  left:20px;
+  top:20px;
+  width:50px;
+  height:40px;
+}
+#line{
+  position:absolute;
+  width:2px;
+  margin-top:-1px;
+  background-color:red;
+}  */
