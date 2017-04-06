@@ -5,7 +5,7 @@
 
 
 body {
-  background-color: Gainsboro;
+  /*background-color: Gainsboro;*/
 }
 /*#outer {
   margin: 20px 20px 20px 20px;
@@ -17,7 +17,7 @@ div.ebene {
   position: relative;
   width: 3000px;
   height: 600px;
-  /*background-color: Gainsboro;*/
+  background-color: #CEF6F5;
 }
 
 /*#svgContainer {
@@ -41,16 +41,15 @@ div.ebene {
     border-radius: 16px;
     box-shadow: 2px 5px 5px rgba(0,0,0,0.2);
   }*/
-connection {
+/*connection {
   z-index: -1;
   border: 3px solid;
   border-radius: 280px;
   color: rgb(128, 128, 128);
   color: rgba(0, 0, 0, 0.5);
-}
+}*/
 
 #ebene1 {
- 
 }
 #ebene2 {
 }
@@ -80,6 +79,7 @@ div.person {
   border-width: medium;
   margin: 10px 10px 10px 10px;
 }
+/* ################# Ebene1 #################*/
 /*Gennadi Heimann*/
 #person_1 {
   position: absolute;
@@ -95,14 +95,14 @@ div.person {
 /*Artiom Heimann*/
 #person_2 {
   position: absolute;
-  top: 450px;
+  top: 300px;
   left: 10px;
 }
 /*Aljona Heimann*/
 #person_3 {
   position: absolute;
   left: 450px;
-  top: 450px;
+  top: 300px;
 }
 /*Kevin Heimann*/
 #person_4 {

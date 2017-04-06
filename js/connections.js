@@ -4,13 +4,6 @@
  * tutorials http://www.freedevelopertutorials.com/jsplumb-tutorial/connections/
  */
 
- /*jsPlumb.ready(function() {
-   jsPlumb.connect({
-     source:"person_1",
-     target:"person_9",
-     endpoint:"Rectangle"
-   });
- });*/
 
 $(document).ready(function() {
   jsPlumb.ready(function() {
@@ -32,10 +25,7 @@ $(document).ready(function() {
       target:"person_2",
       paintStyle:{ stroke:"blue", strokeWidth:3 },
       endpointStyle:{ fill:"red", outlineStroke:"black", outlineWidth:1,radius:5 },
-      //overlays:[
-      //              ["Arrow" , { width:12, length:15, location:1 }]
-      //          ],
-      anchor: ["Right", "Left"],
+      anchor: ["Bottom", "Top"],
       endpoint:"Dot"
     });
     jsPlumb.connect({
@@ -44,10 +34,7 @@ $(document).ready(function() {
       target:"person_3",
       paintStyle:{ stroke:"blue", strokeWidth:3 },
       endpointStyle:{ fill:"red", outlineStroke:"black", outlineWidth:1,radius:5 },
-      //overlays:[
-      //              ["Arrow" , { width:12, length:15, location:1 }]
-      //          ],
-      anchor: ["Right", "Left"],
+      anchor: ["Bottom", "Top"],
       endpoint:"Dot"
     });
     jsPlumb.connect({
@@ -56,10 +43,7 @@ $(document).ready(function() {
       target:"person_3",
       paintStyle:{ stroke:"blue", strokeWidth:3 },
       endpointStyle:{ fill:"red", outlineStroke:"black", outlineWidth:1,radius:5 },
-      //overlays:[
-      //              ["Arrow" , { width:12, length:15, location:1 }]
-      //          ],
-      anchor: ["Right", "Left"],
+      anchor: ["Bottom", "Top"],
       endpoint:"Dot"
     });
     jsPlumb.connect({
@@ -71,7 +55,7 @@ $(document).ready(function() {
       //overlays:[
       //              ["Arrow" , { width:12, length:15, location:1 }]
       //          ],
-      anchor: ["Right", "Left"],
+      anchor: ["Bottom", "Top"],
       endpoint:"Dot"
     });
   });
