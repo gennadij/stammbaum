@@ -20,7 +20,7 @@
 
 
 body {
-  background-color: Gainsboro;
+  /*background-color: #F7F8E0;*/
 }
 
 #stammbaum {
@@ -28,7 +28,7 @@ body {
   position: relative;
   width: 4000px;
   height: 4000px;
-  background-color: #CEF6F5;
+  /*background-color: #F7F8E0;*/
 }
 
 #legende {
