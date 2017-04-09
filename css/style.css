@@ -1,63 +1,42 @@
 @CHARSET "ISO-8859-1";
 
-
-/*JQuery connct to div with one line*/
+:root {
+  --ebene0: 10px
+  --ebene1: 450px;
+  --ebene2: 900px;
+  --ebene3: 1350px;
+  --ebene4: 1800px;
+  --ebene5: 2250px;
+  --ebene6: 2700px;
+  --spalte1: 10px;
+  --spalte2: 450px;
+  --spalte3: 900px;
+  --spalte4: 1350px;
+  --spalte5: 1800px;
+  --spalte6: 2250px;
+  --spalte7: 2700px;
+  --spalte8: 3150px;
+}
 
 
 body {
-  /*background-color: Gainsboro;*/
+  background-color: Gainsboro;
 }
-/*#outer {
-  margin: 20px 20px 20px 20px;
-  width: 500px;
-}*/
 
-div.ebene {
+#stammbaum {
   margin: 10px 10px 10px 10px;
   position: relative;
-  width: 3000px;
-  height: 600px;
+  width: 4000px;
+  height: 4000px;
   background-color: #CEF6F5;
 }
 
-/*#svgContainer {
-  z-index: -10;
-  position: absolute;
-  /*background-color: gray;
-  opacity: 0.5;
-}*/
-
-  /*div {
-    background: rgb(255, 255, 255);
-    background: rgba(255, 255, 255, 0.7);
-    float: left;
-    min-width: 4em;
-    min-height: 3em;
-    max-width: 29ex;
-    margin: 3em;
-    padding: 1em;
-    border: 1px solid rgb(200, 200, 200);
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    border-radius: 16px;
-    box-shadow: 2px 5px 5px rgba(0,0,0,0.2);
-  }*/
-/*connection {
-  z-index: -1;
-  border: 3px solid;
-  border-radius: 280px;
-  color: rgb(128, 128, 128);
-  color: rgba(0, 0, 0, 0.5);
-}*/
-
-#ebene1 {
-}
-#ebene2 {
-}
-#ebene3 {
-}
-#ebene4 {
-}
-#ebene5 {
+#legende {
+  margin: 10px 10px 10px 10px;
+  position: relative;
+  width: 3000px;
+  height: 300px;
+  background-color: #CEF6F5;
 }
 
 div.male {
@@ -79,60 +58,159 @@ div.person {
   border-width: medium;
   margin: 10px 10px 10px 10px;
 }
+/* ################# Ebene0 #################*/
+
+
+/*top: 10*/
+
 /* ################# Ebene1 #################*/
-/*Gennadi Heimann*/
-#person_1 {
+
+/*top: 310*/
+
+/* ################# Ebene2 #################*/
+
+/*top: 610*/
+
+/*Peter Heiman*/
+
+/* ################# Ebene3 #################*/
+
+/*top: 910*/
+
+/*Jakob Heimann*/
+#person_3_1 {
   position: absolute;
-  top: 10px;
-  left: 10px
+  top: var(--ebene3);
+  left: var(--spalte1);
+}
+
+/*Maria Zinger*/
+#person_3_2 {
+  position: absolute;
+  top: var(--ebene3);
+  left: var(--spalte2)
+}
+/*Gilda Heimann*/
+#person_3_3 {
+  position: absolute;
+  top: var(--ebene3);
+  left: var(--spalte3)
+}
+/*Emma Heimann*/
+#person_3_4 {
+  position: absolute;
+  top: var(--ebene3);
+  left: var(--spalte4)
+}
+
+/* ################# Ebene4 #################*/
+
+/*Anja Heimann*/
+#person_4_1 {
+  position: absolute;
+  top: var(--ebene4);
+  left: var(--spalte1);
+}
+/*Walera */
+#person_4_5 {
+  position: absolute;
+  top: var(--ebene4);
+  left: var(--spalte2);
+}
+/*Peter Heimann*/
+#person_4_2 {
+  position: absolute;
+  top: var(--ebene4);
+  left: var(--spalte3);
+}
+/*Galina Heimann*/
+#person_4_6 {
+  position: absolute;
+  top: var(--ebene4);
+  left: var(--spalte4);
+}
+/*Jakob Heimann*/
+#person_4_3 {
+  position: absolute;
+  top: var(--ebene4);
+  left: var(--spalte5);
+}
+/*Swetlana Bljasova*/
+#person_4_7 {
+  position: absolute;
+  top: var(--ebene4);
+  left: var(--spalte6);
+}
+/*Helene Heimann*/
+#person_4_4 {
+  position: absolute;
+  top: var(--ebene4);
+  left: var(--spalte7);
+}
+/*Wladimir Akdigitov*/
+#person_4_8 {
+  position: absolute;
+  top: var(--ebene4);
+  left: var(--spalte8);
+}
+/* ################# Ebene5 #################*/
+
+/*Gennadi Heimann*/
+#person_5_1 {
+  position: absolute;
+  top: var(--ebene5);
+  left: var(--spalte1);
 }
 /*Ludmila Heimann*/
-#person_9 {
+#person_5_2 {
   position: absolute;
-  left: 450px;
-  top: 10px;
+  left: var(--spalte2);
+  top: var(--ebene5);
 }
+
+/* ################# Ebene6 #################*/
+
 /*Artiom Heimann*/
-#person_2 {
+#person_6_1 {
   position: absolute;
-  top: 300px;
-  left: 10px;
+  top: var(--ebene6);
+  left: var(--spalte1);
 }
 /*Aljona Heimann*/
-#person_3 {
+#person_6_2 {
   position: absolute;
-  left: 450px;
-  top: 300px;
+  left: var(--spalte2);
+  top: var(--ebene6);
 }
 /*Kevin Heimann*/
-#person_4 {
+#person_6_3 {
   position: absolute;
-  left: 670px;
-  top: 100px;
+  left: var(--spalte3);
+  top: var(--ebene6);
 }
 /*Julia Heimann*/
-#person_5 {
+#person_6_4 {
   position: absolute;
-  left: 1000px;
-  top: 100px;
+  left: var(--spalte4);
+  top: var(--ebene6);
 }
 /*Richard Rein*/
-#person_6 {
+#person_6_5 {
   position: absolute;
-  left: 1330px;
-  top: 100px;
+  left: var(--spalte5);
+  top: var(--ebene6);
 }
 /*Ivon Rein*/
-#person_7 {
+#person_6_6 {
   position: absolute;
-  left: 1660px;
-  top: 100px;
+  left: var(--spalte6);
+  top: var(--ebene6);
 }
 /*David Heimann*/
-#person_8 {
+#person_6_7 {
   position: absolute;
-  left: 1990px;
-  top: 100px;
+  left: var(--spalte7);
+  top: var(--ebene6);
 }
 
 
