@@ -12,55 +12,71 @@ $(document).ready(function() {
     var top = "Top";
     var bottom = "Bottom";
     //EBENE 1
-    
+
     //EBENE 2
-    
+
     //EBENE 3
-    
+
     verheiratet("person_3_1", "person_3_2");
-    
+
     kinder("person_3_1", bottom, "person_4_1", top, straight);
-    
+
     kinder("person_3_1", bottom, "person_4_2", top, straight);
-    
+
     kinder("person_3_1", bottom, "person_4_3", top, straight);
-    
+
     kinder("person_3_1", bottom, "person_4_4", top, straight);
-    
+
     kinder("person_3_2", bottom, "person_4_1", top, straight);
-    
+
     kinder("person_3_2", bottom, "person_4_2", top, straight);
-    
+
     kinder("person_3_2", bottom, "person_4_3", top, straight);
-    
+
     kinder("person_3_2", bottom, "person_4_4", top, straight);
-    
+
     //EBENE 4
-    
+
     //EBENE 5
-    
+
     verheiratet("person_5_1", "person_5_2");
-    
+
     //EBENE 6
-    
+
     hatSohn("person_5_1", bottom, "person_6_1", top, straight);
-    
+
     hatTochter("person_5_1", bottom, "person_6_2", top, straight);
-    
+
     hatSohn("person_5_2", bottom, "person_6_1", top, straight);
-    
+
     hatTochter("person_5_2", bottom, "person_6_2", top, straight);
-    
-    
-    
+
+    //$( "#dialog" ).dialog();
+
+    $( "#details_person_5_1" ).dialog({
+      autoOpen: false,
+      show: {
+        //effect: "blind",
+        duration: 1000
+      },
+      hide: {
+        //effect: "explode",
+        duration: 1000
+      }
+    });
+
+    $( "#details" ).on( "click", function() {
+      $( "#details_person_5_1" ).dialog( "open" );
+    });
+
     // geschwister("person_3_1", top, "person_3_3", top, bezier);
-//     
+//
     // geschwister("person_3_1", bottom, "person_3_4", bottom, bezier);
-//       
+//
     // geschwister("person_4_1",top, "person_4_2", top, bezier);
-//     
+//
     // geschwister("person_4_1", bottom, "person_4_3", bottom, bezier);
-    
+
     // geschwister("person_4_1", top, "person_4_4", top, bezier);
 
     // jsPlumb.connect({
@@ -90,7 +106,7 @@ $(document).ready(function() {
   // $('connection:odd').addClass('odd');
   // var connections = $('connection, inner');
   // setInterval(function() { connections.connections('update') }, 100);
-  
+
   function verheiratet (node1, node2) {
     jsPlumb.connect({
       connector: ["Straight"],
@@ -102,7 +118,7 @@ $(document).ready(function() {
       endpoint:"Dot"
     });
   }
-  
+
   function geschwister (node1, anchorN1, node2, anchorN2, connector) {
     jsPlumb.connect({
       connector: ["Bezier"],
@@ -114,7 +130,7 @@ $(document).ready(function() {
       endpoint:"Dot"
     });
   }
-  
+
   function kinder (node1, anchorN1, node2, anchorN2, connector){
     jsPlumb.connect({
       connector: [connector],
@@ -142,9 +158,14 @@ $(document).ready(function() {
       connector: [connector],
       source:node1,
       target:node2,
-      paintStyle:{ stroke:"#00FF00", strokeWidth:3 },
-      endpointStyle:{ fill:"red", outlineStroke:"black", outlineWidth:1,radius:5 },
-      overlays:[["Label", {label:"Tochter", id:"label", location: 0.3}]], 
+      paintStyle:{ stroke:"#BCF5A9", strokeWidth:3 },
+      endpointStyle:{ fill:"red", outlineStroke:"black", outlineWidth:1,radius:3 },
+      overlays:[
+        ["Arrow", {location: 0.1, direction: -1}],
+        ["Arrow", {location: 0.9, direction: 1}],
+        ["Label", {label:"Tochter", id:"label1", location: 0.8}],
+        ["Label", {label:"Vater", id:"label2", location: 0.2}]
+      ],
       anchor: [anchorN1, anchorN2],
       endpoint:"Dot"
     });

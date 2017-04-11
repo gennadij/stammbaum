@@ -6,13 +6,19 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Stammbaum</title>
   <!-- CSS -->
-  <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+  <!--<link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css"> -->
+  <!-- <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"> -->
   <link href="css/style.css" type="text/css" rel="stylesheet">
+  <link href="css/jquery-ui.css" type="text/css" rel="stylesheet">
+  <link href="css/jquery-ui.structure.css" type="text/css" rel="stylesheet">
+  <link href="css/jquery-ui.theme.css" type="text/css" rel="stylesheet">
   <!-- JS -->
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>-->
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <script src="js/jsplumb.js"></script>
   <script src="js/connections.js"></script>
-  <script src="js/jquery.connections.js"></script>
+  <!--<script src="js/jquery.connections.js"></script>-->
 
 </head>
 
@@ -23,7 +29,7 @@
     hell gruen = hat Tochter <br />
     gruen = hat Sohn <br />
     blau = sind Geschwister <br />
-    
+
   </div>
   <div id="stammbaum">
     <!--################## Ebene 3 #################### -->
@@ -317,7 +323,11 @@
       </div>
     </div>
     <!--################## Ebene 5 #################### -->
-    <div id="person_5_1" class="person">
+
+    <div id="person_5_1" class="person" >
+      <div id="details_person_5_1" class="details" title="Basic dialog">
+        <p>Details zu der Person</p>
+      </div>
       <table>
         <tbody>
           <tr>
@@ -334,6 +344,11 @@
           <tr>
             <td>Geburtsdatum:</td>
             <td>17.09.1981</td>
+          </tr>
+          <tr>
+            <td colspan="3" align="center">
+              <button id="details" > Details</button>
+            </td>
           </tr>
         </tbody>
       </table>
