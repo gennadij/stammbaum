@@ -8,14 +8,14 @@
   --ebene4: 1800px;
   --ebene5: 2250px;
   --ebene6: 2700px;
-  --spalte1: 10px;
+  --spalte1: 5px;
   --spalte2: 600px;
-  --spalte3: 900px;
-  --spalte4: 1350px;
-  --spalte5: 1800px;
-  --spalte6: 2250px;
-  --spalte7: 2700px;
-  --spalte8: 3150px;
+  --spalte3: 1200px;
+  --spalte4: 1800px;
+  --spalte5: 2400px;
+  --spalte6: 3000px;
+  --spalte7: 3600px;
+  --spalte8: 4200px;
 }
 
 
@@ -165,6 +165,18 @@ div.person {
 #person_5_2 {
   position: absolute;
   left: var(--spalte2);
+  top: var(--ebene5);
+}
+/*Anton Heimann*/
+#person_5_3 {
+  position: absolute;
+  left: var(--spalte3);
+  top: var(--ebene5);
+}
+/*Jana Eschner*/
+#person_5_4 {
+  position: absolute;
+  left: var(--spalte4);
   top: var(--ebene5);
 }
 

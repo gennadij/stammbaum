@@ -11,14 +11,14 @@ $(document).ready(function() {
     var straight = "Straight";
     var top = "Top";
     var bottom = "Bottom";
-    var mann = "Mann"
-    var frau = "Frau"
-    var vater = "Vater"
-    var muter = "Muter"
-    var sohn = "Sohn"
-    var tochter = "Tochter"
-    var right = "Right"
-    var left = "Left"
+    var mann = "Mann";
+    var frau = "Frau";
+    var vater = "Vater";
+    var mutter = "Muter";
+    var sohn = "Sohn";
+    var tochter = "Tochter";
+    var right = "Right";
+    var left = "Left";
     //EBENE 1
 
     //EBENE 2
@@ -58,6 +58,19 @@ $(document).ready(function() {
     };
 
     connect(params_5_1);
+    
+    var params_5_2 = {
+      node1: "person_5_3",
+      anchorN1: right,
+      labelN1: mann,
+      node2: "person_5_4",
+      anchorN2: left,
+      labelN2: frau,
+      connector: straight,
+      strokeColor: "#BCF5A9"
+    };
+
+    connect(params_5_2);
 
     //EBENE 6
 
@@ -71,7 +84,7 @@ $(document).ready(function() {
       connector: straight,
       strokeColor: "#BCF5A9"
     };
-    connect(params_6_1)
+    connect(params_6_1);
 
     var params_6_2 = {
       node1: "person_5_1",
@@ -83,28 +96,116 @@ $(document).ready(function() {
       connector: straight,
       strokeColor: "#BCF5A9"
     };
-    connect(params_6_2)
+    
+    connect(params_6_2);
+    
+    var params_6_3 = {
+      node1: "person_5_2",
+      anchorN1: bottom,
+      labelN1: mutter,
+      node2: "person_6_1",
+      anchorN2: top,
+      labelN2: sohn,
+      connector: straight,
+      strokeColor: "#BCF5A9"
+    };
+    
+    connect(params_6_3);
 
-    hatSohn("person_5_2", bottom, "person_6_1", top, straight);
+    var params_6_4 = {
+      node1: "person_5_2",
+      anchorN1: bottom,
+      labelN1: mutter,
+      node2: "person_6_2",
+      anchorN2: top,
+      labelN2: tochter,
+      connector: straight,
+      strokeColor: "#BCF5A9"
+    };
+    
+    connect(params_6_4);
+    
+    var params_6_5 = {
+      node1: "person_5_3",
+      anchorN1: bottom,
+      labelN1: vater,
+      node2: "person_6_3",
+      anchorN2: top,
+      labelN2: sohn,
+      connector: straight,
+      strokeColor: "#BCF5A9"
+    };
+    connect(params_6_5);
 
-    hatTochter("person_5_2", bottom, "person_6_2", top, straight);
+    var params_6_6 = {
+      node1: "person_5_3",
+      anchorN1: bottom,
+      labelN1: vater,
+      node2: "person_6_4",
+      anchorN2: top,
+      labelN2: tochter,
+      connector: straight,
+      strokeColor: "#BCF5A9"
+    };
+    
+    connect(params_6_6);
+    
+    var params_6_7 = {
+      node1: "person_5_4",
+      anchorN1: bottom,
+      labelN1: mutter,
+      node2: "person_6_3",
+      anchorN2: top,
+      labelN2: sohn,
+      connector: straight,
+      strokeColor: "#BCF5A9"
+    };
+    
+    connect(params_6_7);
 
-    //$( "#dialog" ).dialog();
+    var params_6_8 = {
+      node1: "person_5_4",
+      anchorN1: bottom,
+      labelN1: mutter,
+      node2: "person_6_4",
+      anchorN2: top,
+      labelN2: tochter,
+      connector: straight,
+      strokeColor: "#BCF5A9"
+    };
+    
+    connect(params_6_8);
 
     $( "#details_person_5_1" ).dialog({
       autoOpen: false,
       show: {
+        duration: 500
+      },
+      hide: {
+        duration: 500
+      }
+    });
+    
+    
+
+    $( "#button_person_5_1" ).on( "click", function() {
+      $( "#details_person_5_1" ).dialog( "open" );
+    });
+
+    $( "#details_person_5_3" ).dialog({
+      autoOpen: false,
+      show: {
         //effect: "blind",
-        duration: 1000
+        duration: 500
       },
       hide: {
         //effect: "explode",
-        duration: 1000
+        duration: 500
       }
     });
 
-    $( "#details" ).on( "click", function() {
-      $( "#details_person_5_1" ).dialog( "open" );
+    $( "#button_person_5_3" ).on( "click", function() {
+      $( "#details_person_5_3" ).dialog( "open" );
     });
 
     // geschwister("person_3_1", top, "person_3_3", top, bezier);
@@ -215,7 +316,7 @@ $(document).ready(function() {
       source:params.node1,
       target:params.node2,
       paintStyle:{ stroke:params.strokeColor, strokeWidth:3 },
-      endpointStyle:{ fill:"red", outlineStroke:"black", outlineWidth:1,radius:3 },
+      endpointStyle:{ fill:"red", outlineStroke:"black", outlineWidth:1,radius:5 },
       overlays:[
         ["Arrow", {location: 0.1, direction: -1}],
         ["Arrow", {location: 0.9, direction: 1}],
