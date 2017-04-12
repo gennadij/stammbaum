@@ -11,6 +11,14 @@ $(document).ready(function() {
     var straight = "Straight";
     var top = "Top";
     var bottom = "Bottom";
+    var mann = "Mann"
+    var frau = "Frau"
+    var vater = "Vater"
+    var muter = "Muter"
+    var sohn = "Sohn"
+    var tochter = "Tochter"
+    var right = "Right"
+    var left = "Left"
     //EBENE 1
 
     //EBENE 2
@@ -38,14 +46,44 @@ $(document).ready(function() {
     //EBENE 4
 
     //EBENE 5
+    var params_5_1 = {
+      node1: "person_5_1",
+      anchorN1: right,
+      labelN1: mann,
+      node2: "person_5_2",
+      anchorN2: left,
+      labelN2: frau,
+      connector: straight,
+      strokeColor: "#BCF5A9"
+    };
 
-    verheiratet("person_5_1", "person_5_2");
+    connect(params_5_1);
 
     //EBENE 6
 
-    hatSohn("person_5_1", bottom, "person_6_1", top, straight);
+    var params_6_1 = {
+      node1: "person_5_1",
+      anchorN1: bottom,
+      labelN1: vater,
+      node2: "person_6_1",
+      anchorN2: top,
+      labelN2: sohn,
+      connector: straight,
+      strokeColor: "#BCF5A9"
+    };
+    connect(params_6_1)
 
-    hatTochter("person_5_1", bottom, "person_6_2", top, straight);
+    var params_6_2 = {
+      node1: "person_5_1",
+      anchorN1: bottom,
+      labelN1: vater,
+      node2: "person_6_2",
+      anchorN2: top,
+      labelN2: tochter,
+      connector: straight,
+      strokeColor: "#BCF5A9"
+    };
+    connect(params_6_2)
 
     hatSohn("person_5_2", bottom, "person_6_1", top, straight);
 
@@ -167,6 +205,24 @@ $(document).ready(function() {
         ["Label", {label:"Vater", id:"label2", location: 0.2}]
       ],
       anchor: [anchorN1, anchorN2],
+      endpoint:"Dot"
+    });
+  }
+
+  function connect (params){
+    jsPlumb.connect({
+      connector: [params.connector],
+      source:params.node1,
+      target:params.node2,
+      paintStyle:{ stroke:params.strokeColor, strokeWidth:3 },
+      endpointStyle:{ fill:"red", outlineStroke:"black", outlineWidth:1,radius:3 },
+      overlays:[
+        ["Arrow", {location: 0.1, direction: -1}],
+        ["Arrow", {location: 0.9, direction: 1}],
+        ["Label", {label:params.labelN1, id:"label1", location: 0.2}],
+        ["Label", {label:params.labelN2, id:"label2", location: 0.8}]
+      ],
+      anchor: [params.anchorN1, params.anchorN2],
       endpoint:"Dot"
     });
   }
