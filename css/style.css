@@ -14,17 +14,27 @@
   --spalte6: 3000px;
   --spalte7: 3600px;
   --spalte8: 4200px;
+  --spalte9: 4800px;
+  --spalte10: 5400px;
+  --spalte11: 6000px;
+  --spalte12: 6600px;
+  --spalte13: 7200px;
+  --spalte14: 7800px;
+  --spalte15: 8400px;
+  --spalte16: 9000px;
+  --spalte17: 9600px;
+  --spalte18: 10200px;
 }
 
 
 body {
-  background-color: #F7F8E0;
+  /*background-color: #F7F8E0;*/
 }
 
 #stammbaum {
   margin: 10px 10px 10px 10px;
   position: relative;
-  width: 4000px;
+  width: 10200px;
   height: 4000px;
   /*background-color: #F7F8E0;*/
 }
@@ -51,7 +61,7 @@ div.female {
 
 div.person {
   width: 300px;
-  height: 100px;
+  height: 120px;
   border-style: solid;
   border-width: medium;
   margin: 10px 10px 10px 10px;
@@ -79,77 +89,82 @@ div.person {
 #person_3_1 {
   position: absolute;
   top: var(--ebene3);
-  left: var(--spalte1);
+  left: var(--spalte8);
 }
 
 /*Maria Zinger*/
 #person_3_2 {
   position: absolute;
   top: var(--ebene3);
-  left: var(--spalte2)
+  left: var(--spalte9)
 }
 /*Gilda Heimann*/
 #person_3_3 {
   position: absolute;
   top: var(--ebene3);
-  left: var(--spalte3)
+  left: var(--spalte10)
 }
 /*Emma Heimann*/
 #person_3_4 {
   position: absolute;
   top: var(--ebene3);
-  left: var(--spalte4)
+  left: var(--spalte11)
 }
 
 /* ################# Ebene4 #################*/
 
-/*Anja Heimann*/
+/*Peter Heimann*/
 #person_4_1 {
-  position: absolute;
-  top: var(--ebene4);
-  left: var(--spalte1);
-}
-/*Walera */
-#person_4_5 {
   position: absolute;
   top: var(--ebene4);
   left: var(--spalte2);
 }
-/*Peter Heimann*/
+/*Galina Nikitina*/
 #person_4_2 {
   position: absolute;
   top: var(--ebene4);
   left: var(--spalte3);
 }
-/*Galina Heimann*/
-#person_4_6 {
-  position: absolute;
-  top: var(--ebene4);
-  left: var(--spalte4);
-}
-/*Jakob Heimann*/
+
+/*Wladimir Akdigitov*/
 #person_4_3 {
-  position: absolute;
-  top: var(--ebene4);
-  left: var(--spalte5);
-}
-/*Swetlana Bljasova*/
-#person_4_7 {
   position: absolute;
   top: var(--ebene4);
   left: var(--spalte6);
 }
+
 /*Helene Heimann*/
 #person_4_4 {
   position: absolute;
   top: var(--ebene4);
   left: var(--spalte7);
 }
-/*Wladimir Akdigitov*/
+
+/*Jakob Heimann */
+#person_4_5 {
+  position: absolute;
+  top: var(--ebene4);
+  left: var(--spalte11);
+}
+
+/*Swetlana Bljasova*/
+#person_4_6 {
+  position: absolute;
+  top: var(--ebene4);
+  left: var(--spalte12);
+}
+/*Anja Heimann*/
+#person_4_7 {
+  position: absolute;
+  top: var(--ebene4);
+  left: var(--spalte14);
+}
+
+/*Валерий Винниченко*/
 #person_4_8 {
   position: absolute;
   top: var(--ebene4);
-  left: var(--spalte8);
+  left: var(--spalte15);
 }
 /* ################# Ebene5 #################*/
 
@@ -175,6 +190,83 @@ div.person {
 #person_5_4 {
   position: absolute;
   left: var(--spalte4);
+  top: var(--ebene5);
+}
+
+/*Natalja Akdegitova*/
+#person_5_5 {
+  position: absolute;
+  left: var(--spalte5);
+  top: var(--ebene5);
+}
+
+/*Johanes Rein*/
+#person_5_6 {
+  position: absolute;
+  left: var(--spalte6);
+  top: var(--ebene5);
+}
+
+/*Tomas*/
+#person_5_7 {
+  position: absolute;
+  left: var(--spalte7);
+  top: var(--ebene5);
+}
+
+/*Jakob Akdigitov*/
+#person_5_8 {
+  position: absolute;
+  left: var(--spalte8);
+  top: var(--ebene5);
+}
+
+/*Marina Oslopowskaja*/
+#person_5_9 {
+  position: absolute;
+  left: var(--spalte9);
+  top: var(--ebene5);
+}
+
+/*Ellen Heimann*/
+#person_5_10 {
+  position: absolute;
+  left: var(--spalte10);
+  top: var(--ebene5);
+}
+
+/*Viktor Strehle*/
+#person_5_11 {
+  position: absolute;
+  left: var(--spalte11);
+  top: var(--ebene5);
+}
+
+/*Alexander Heimann*/
+#person_5_12 {
+  position: absolute;
+  left: var(--spalte12);
+  top: var(--ebene5);
+}
+
+/*Андрей Винниченко*/
+#person_5_13 {
+  position: absolute;
+  left: var(--spalte13);
+  top: var(--ebene5);
+}
+
+/*Александр Винниченко*/
+#person_5_14 {
+  position: absolute;
+  left: var(--spalte14);
+  top: var(--ebene5);
+}
+
+/*Галина Винниченко*/
+#person_5_15 {
+  position: absolute;
+  left: var(--spalte15);
   top: var(--ebene5);
 }
 
@@ -219,7 +311,7 @@ div.person {
 /*David Heimann*/
 #person_6_7 {
   position: absolute;
-  left: var(--spalte7);
+  left: var(--spalte8);
   top: var(--ebene6);
 }
 
