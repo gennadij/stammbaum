@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Stammbaum</title>
+  <!-- CSS -->
+  <!--<link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css"> -->
+  <!-- <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"> -->
+  <link href="css/style.css" type="text/css" rel="stylesheet">
+  <link href="css/jquery-ui.css" type="text/css" rel="stylesheet">
+  <link href="css/jquery-ui.structure.css" type="text/css" rel="stylesheet">
+  <link href="css/jquery-ui.theme.css" type="text/css" rel="stylesheet">
+  <!-- JS -->
+  <!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>-->
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="js/jsplumb.js"></script>
+  <script src="js/connections.js"></script>
+  <!--<script src="js/jquery.connections.js"></script>-->
+</head>
+
+<body>
+  <div id="legende">
+    Legende<br />
+    rot = verheiratet <br />
+    hell gruen = hat Tochter <br />
+    gruen = hat Sohn <br />
+    blau = sind Geschwister <br />
+
+  </div>
+  <div id="stammbaum">
+    <!--################## Ebene 3 #################### -->
+    <div id="person_3_1" class="person">
+      <table>
+        <tbody>
+          <tr>
+            <td rowspan="4">
+            <img src="img/images.jpg" alt="Img" style="width:60px;height:60px;">
+          </td>
+            <td>Vorname/имя:</td>
+            <td>Jakob</td>
+          </tr>
+          <tr>
+            <td>Geburtsname:</td>
+            <td>Heimann</td>
+          </tr>
+          <tr>
+            <td>Geburtsdatum:</td>
+            <td>unbekannt</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="male">
+        <img src="img/Male-Symbol.png" alt="Img" style="width:10px;height:10px;">
+      </div>
+    </div>
+    <div id="person_3_2" class="person">
+      <table>
+        <tbody>
+          <tr>
+            <td rowspan="4">
+            <img src="img/images.jpg" alt="Img" style="width:60px;height:60px;">
+          </td>
+            <td>Vorname/имя:</td>
+            <td>Maria</td>
+          </tr>
+          <tr>
+            <td>Geburtsname:</td>
+            <td>Zinger</td>
+          </tr>
+          <tr>
+            <td>Geburtsdatum:</td>
+            <td>unbekannt</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="female">
+        <img src="img/Female_symbol.png" alt="Img" style="width:10px;height:15px;">
+      </div>
+    </div>
+    <div id="person_3_3" class="person">
+      <table>
+        <tbody>
+          <tr>
+            <td rowspan="4">
+            <img src="img/images.jpg" alt="Img" style="width:60px;height:60px;">
+          </td>
+            <td>Vorname/имя:</td>
+            <td>Gilda</td>
+          </tr>
+          <tr>
+            <td>Geburtsname:</td>
+            <td>Heimann</td>
+          </tr>
+          <tr>
+            <td>Geburtsdatum:</td>
+            <td>unbekannt</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="female">
+        <img src="img/Female_symbol.png" alt="Img" style="width:10px;height:15px;">
+      </div>
+    </div>
+    <div id="person_3_4" class="person">
+      <table>
+        <tbody>
+          <tr>
+            <td rowspan="4">
+            <img src="img/images.jpg" alt="Img" style="width:60px;height:60px;">
+          </td>
+            <td>Vorname/имя:</td>
+            <td>Emma</td>
+          </tr>
+          <tr>
+            <td>Geburtsname:</td>
+            <td>Heimann</td>
+          </tr>
+          <tr>
+            <td>Geburtsdatum:</td>
+            <td>unbekannt</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="female">
+        <img src="img/Female_symbol.png" alt="Img" style="width:10px;height:15px;">
+      </div>
+    </div>
+    <!--################## Ebene 4 #################### -->
+    <div id="person_4_1" class="person">
+      <table>
+        <tbody>
+          <tr>
+            <td rowspan="4">
+            <img src="img/images.jpg" alt="Img" style="width:60px;height:60px;">
+          </td>
+            <td>Vorname/имя:</td>
+            <td>Anja</td>
+          </tr>
+          <tr>
+            <td>Geburtsname:</td>
+            <td>Heimann</td>
+          </tr>
+          <tr>
+            <td>Geburtsdatum:</td>
+            <td>unbekannt</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="female">
+        <img src="img/Female_symbol.png" alt="Img" style="width:10px;height:15px;">
+      </div>
+    </div>
+    <div id="person_4_5" class="person">
+      <table>
+        <tbody>
+          <tr>
+            <td rowspan="4">
+            <img src="img/images.jpg" alt="Img" style="width:60px;height:60px;">
+          </td>
+            <td>Vorname/имя:</td>
+            <td>Walera</td>
+          </tr>
+          <tr>
+            <td>Geburtsname:</td>
+            <td>unbekant</td>
+          </tr>
+          <tr>
+            <td>Geburtsdatum:</td>
+            <td>unbekannt</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="male">
+        <img src="img/Male-Symbol.png" alt="Img" style="width:10px;height:10px;">
+      </div>
+    </div>
+    <div id="person_4_2" class="person">
+      <table>
+        <tbody>
+          <tr>
+            <td rowspan="4">
+            <img src="img/images.jpg" alt="Img" style="width:60px;height:60px;">
+          </td>
+            <td>Vorname/имя:</td>
+            <td>Peter</td>
+          </tr>
+          <tr>
+            <td>Geburtsname:</td>
+            <td>Heimann</td>
+          </tr>
+          <tr>
+            <td>Geburtsdatum:</td>
+            <td>08.08.1958</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="male">
+        <img src="img/Male-Symbol.png" alt="Img" style="width:10px;height:10px;">
+      </div>
+    </div>
+    <div id="person_4_6" class="person">
+      <table>
+        <tbody>
+          <tr>
+            <td rowspan="4">
+            <img src="img/images.jpg" alt="Img" style="width:60px;height:60px;">
+          </td>
+            <td>Vorname/имя:</td>
+            <td>Galina</td>
+          </tr>
+          <tr>
+            <td>Geburtsname:</td>
+            <td>Nikitina</td>
+          </tr>
+          <tr>
+            <td>Geburtsdatum:</td>
+            <td>09.08.1960</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="female">
+        <img src="img/Female_symbol.png" alt="Img" style="width:10px;height:15px;">
+      </div>
+    </div>
+    <div id="person_4_3" class="person">
+      <table>
+        <tbody>
+          <tr>
+            <td rowspan="4">
+            <img src="img/images.jpg" alt="Img" style="width:60px;height:60px;">
+          </td>
+            <td>Vorname/имя:</td>
+            <td>Jakob</td>
+          </tr>
+          <tr>
+            <td>Geburtsname:</td>
+            <td>Heimann</td>
+          </tr>
+          <tr>
+            <td>Geburtsdatum:</td>
+            <td>unbekannt</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="male">
+        <img src="img/Male-Symbol.png" alt="Img" style="width:10px;height:10px;">
+      </div>
+    </div>
+    <div id="person_4_7" class="person">
+      <table>
+        <tbody>
+          <tr>
+            <td rowspan="4">
+            <img src="img/images.jpg" alt="Img" style="width:60px;height:60px;">
+          </td>
+            <td>Vorname/имя:</td>
+            <td>Swetlana</td>
+          </tr>
+          <tr>
+            <td>Geburtsname:</td>
+            <td>Bljasova</td>
+          </tr>
+          <tr>
+            <td>Geburtsdatum:</td>
+            <td>unbekannt</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="female">
+        <img src="img/Female_symbol.png" alt="Img" style="width:10px;height:15px;">
+      </div>
+    </div>
+    <div id="person_4_4" class="person">
+      <table>
+        <tbody>
+          <tr>
+            <td rowspan="4">
+            <img src="img/images.jpg" alt="Img" style="width:60px;height:60px;">
+          </td>
+            <td>Vorname/имя:</td>
+            <td>Helene</td>
+          </tr>
+          <tr>
+            <td>Geburtsname:</td>
+            <td>Heimann</td>
+          </tr>
+          <tr>
+            <td>Geburtsdatum:</td>
+            <td>unbekannt</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="female">
+        <img src="img/Female_symbol.png" alt="Img" style="width:10px;height:15px;">
+      </div>
+    </div>
+    <div id="person_4_8" class="person">
+      <table>
+        <tbody>
+          <tr>
+            <td rowspan="4">
+            <img src="img/images.jpg" alt="Img" style="width:60px;height:60px;">
+          </td>
+            <td>Vorname/имя:</td>
+            <td>Wladimir</td>
+          </tr>
+          <tr>
+            <td>Geburtsname:</td>
+            <td>Akdigitov</td>
+          </tr>
+          <tr>
+            <td>Geburtsdatum:</td>
+            <td>unbekannt</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="male">
+        <img src="img/Male-Symbol.png" alt="Img" style="width:10px;height:10px;">
+      </div>
+    </div>
+    <!--################## Ebene 5 #################### -->
+    <div id="person_5_1" class="person">
+      <div id="details_person_5_1" class="details" title="Details zu Gennadi Heimann">
+        <table>
+          <tbody>
+            <tr>
+              <td>Ehename:</td>
+              <td>Heimann</td>
+            </tr>
+            <tr>
+              <td>Geburtsort</td>
+              <td>Karaganda</td>
+            </tr>
+            <tr>
+              <td>Geburtsland</td>
+              <td>Kasachstan</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <table>
+        <tbody>
+          <tr>
+            <td rowspan="4">
+            <img src="img/images.jpg" alt="Img" style="width:60px;height:60px;">
+          </td>
+            <td>Vorname/имя:</td>
+            <td>Gennadi</td>
+          </tr>
+          <tr>
+            <td>Geburtsname:</td>
+            <td>Heimann</td>
+          </tr>
+          <tr>
+            <td>Geburtsdatum:</td>
+            <td>17.09.1981</td>
+          </tr>
+          <tr>
+            <td colspan="3" align="center">
+              <button id="button_person_5_1" > Details</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="male">
+        <img src="img/Male-Symbol.png" alt="Img" style="width:10px;height:10px;">
+      </div>
+    </div>
+    <div id="person_5_2" class="person">
+      <div id="details_person_5_2" class="details" title="Details zu Ludmila Heimann">
+        <table>
+          <tbody>
+            <tr>
+              <td>Ehename:</td>
+              <td>Heimann</td>
+            </tr>
+            <tr>
+              <td>Geburtsort</td>
+              <td>Koktschetaw</td>
+            </tr>
+            <tr>
+              <td>Geburtsland</td>
+              <td>Kasachstan</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <table>
+        <tbody>
+          <tr>
+            <td rowspan="4">
+            <img src="img/images.jpg" alt="Img" style="width:60px;height:60px;">
+          </td>
+            <td>Vorname/имя:</td>
+            <td>Ludmila</td>
+          </tr>
+          <tr>
+            <td>Geburtsname:</td>
+            <td>Hock</td>
+          </tr>
+          <tr>
+            <td>Geburtsdatum:</td>
+            <td>08.03.1984</td>
+          </tr>
+          <tr>
+            <td colspan="3" align="center">
+              <button id="button_person_5_2" > Details</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="female">
+        <img src="img/Female_symbol.png" alt="Img" style="width:10px;height:15px;">
+      </div>
+    </div>
+    <div id="person_5_3" class="person">
+      <div id="details_person_5_3" class="details" title="Basic dialog">
+        <table>
+          <tbody>
+            <tr>
+              <td>Ehename:</td>
+              <td>Heimann</td>
+            </tr>
+            <tr>
+              <td>Geburtsort</td>
+              <td>Karaganda</td>
+            </tr>
+            <tr>
+              <td>Geburtsland</td>
+              <td>Kasachstan</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <table>
+        <tbody>
+          <tr>
+            <td rowspan="4">
+            <img src="img/images.jpg" alt="Img" style="width:60px;height:60px;">
+          </td>
+            <td>Vorname/имя:</td>
+            <td>Anton</td>
+          </tr>
+          <tr>
+            <td>Geburtsname:</td>
+            <td>Heimann</td>
+          </tr>
+          <tr>
+            <td>Geburtsdatum:</td>
+            <td>12.06.1987</td>
+          </tr>
+          <tr>
+            <td colspan="3" align="center">
+              <button id="button_person_5_3" > Details</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="male">
+        <img src="img/Male-Symbol.png" alt="Img" style="width:10px;height:10px;">
+      </div>
+    </div>
+    <div id="person_5_4" class="person">
+      <div id="details_person_5_4" class="details" title="Details zu Jana Eschner">
+        <table>
+          <tbody>
+            <tr>
+              <td>Ehename:</td>
+              <td>Heimann</td>
+            </tr>
+            <tr>
+              <td>Geburtsort</td>
+              <td>Unbekannt</td>
+            </tr>
+            <tr>
+              <td>Geburtsland</td>
+              <td>Kasachstan</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <table>
+        <tbody>
+          <tr>
+            <td rowspan="4">
+            <img src="img/images.jpg" alt="Img" style="width:60px;height:60px;">
+          </td>
+            <td>Vorname/имя:</td>
+            <td>Jana</td>
+          </tr>
+          <tr>
+            <td>Geburtsname:</td>
+            <td>Eschner</td>
+          </tr>
+          <tr>
+            <td>Geburtsdatum:</td>
+            <td>unbekannt</td>
+          </tr>
+          <tr>
+            <td colspan="3" align="center">
+              <button id="button_person_5_4" > Details</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="female">
+        <img src="img/Female_symbol.png" alt="Img" style="width:10px;height:15px;">
+      </div>
+    </div>
+    <!--################## Ebene 6 #################### -->
+    <div id="person_6_1" class="person">
+      <div id="details_person_6_1" class="details" title="Details zu Artim Heimann">
+        <table>
+          <tbody>
+            <tr>
+              <td>Ehename:</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Geburtsort</td>
+              <td>Weingarten</td>
+            </tr>
+            <tr>
+              <td>Geburtsland</td>
+              <td>Deutschland</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <table>
+        <tbody>
+          <tr>
+            <td rowspan="4">
+            <img src="img/images.jpg" alt="Img" style="width:60px;height:60px;">
+          </td>
+            <td>Vorname/имя:</td>
+            <td>Artiom</td>
+          </tr>
+          <tr>
+            <td>Geburtsname:</td>
+            <td>Heimann</td>
+          </tr>
+          <tr>
+            <td>Geburtsdatum:</td>
+            <td>30.03.2005</td>
+          </tr>
+          <tr>
+            <td colspan="3" align="center">
+              <button id="button_person_6_1" > Details</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="male">
+        <img src="img/Male-Symbol.png" alt="Img" style="width:10px;height:10px;">
+      </div>
+    </div>
+    <div id="person_6_2" class="person">
+      <div id="details_person_6_2" class="details" title="Details zu Aljona Heimann">
+        <table>
+          <tbody>
+            <tr>
+              <td>Ehename:</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Geburtsort</td>
+              <td>Weingarten</td>
+            </tr>
+            <tr>
+              <td>Geburtsland</td>
+              <td>Deutschland</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <table>
+        <tbody>
+          <tr>
+            <td rowspan="4">
+            <img src="img/images.jpg" alt="Img" style="width:60px;height:60px;">
+          </td>
+            <td>Vorname/имя:</td>
+            <td>Aljona</td>
+          </tr>
+          <tr>
+            <td>Geburtsname:</td>
+            <td>Heimann</td>
+          </tr>
+          <tr>
+            <td>Geburtsdatum:</td>
+            <td>20.07.2012</td>
+          </tr>
+          <tr>
+            <td colspan="3" align="center">
+              <button id="button_person_6_2" > Details</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="female">
+        <img src="img/Female_symbol.png" alt="Img" style="width:10px;height:15px;">
+      </div>
+    </div>
+    <div id="person_6_3" class="person">
+      <div id="details_person_6_3" class="details" title="Details zu Kevin Heimann">
+        <table>
+          <tbody>
+            <tr>
+              <td>Ehename:</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Geburtsort</td>
+              <td>Weingarten</td>
+            </tr>
+            <tr>
+              <td>Geburtsland</td>
+              <td>Deutschland</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <table>
+        <tbody>
+          <tr>
+            <td rowspan="4">
+            <img src="img/images.jpg" alt="Img" style="width:60px;height:60px;">
+          </td>
+            <td>Vorname/имя:</td>
+            <td>Kevin</td>
+          </tr>
+          <tr>
+            <td>Geburtsname:</td>
+            <td>Heimann</td>
+          </tr>
+          <tr>
+            <td>Geburtsdatum:</td>
+            <td>26.06.2013</td>
+          </tr>
+          <tr>
+            <td colspan="3" align="center">
+              <button id="button_person_6_3" > Details</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="male">
+        <img src="img/Male-Symbol.png" alt="Img" style="width:10px;height:10px;">
+      </div>
+    </div>
+    <div id="person_6_4" class="person">
+      <div id="details_person_6_4" class="details" title="Details zu Julaa Heimann">
+        <table>
+          <tbody>
+            <tr>
+              <td>Ehename:</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Geburtsort</td>
+              <td>Weingarten</td>
+            </tr>
+            <tr>
+              <td>Geburtsland</td>
+              <td>Deutschland</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <table>
+        <tbody>
+          <tr>
+            <td rowspan="4">
+            <img src="img/images.jpg" alt="Img" style="width:60px;height:60px;">
+          </td>
+            <td>Vorname/имя:</td>
+            <td>Julia</td>
+          </tr>
+          <tr>
+            <td>Geburtsname:</td>
+            <td>Heimann</td>
+          </tr>
+          <tr>
+            <td>Geburtsdatum:</td>
+            <td>22.06.2015</td>
+          </tr>
+          <tr>
+            <td colspan="3" align="center">
+              <button id="button_person_6_4" > Details</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="female">
+        <img src="img/Female_symbol.png" alt="Img" style="width:10px;height:15px;">
+      </div>
+    </div>
+    <div id="person_6_5" class="person">
+      <div id="details_person_6_5" class="details" title="Details zu Richard Heimann">
+        <table>
+          <tbody>
+            <tr>
+              <td>Ehename:</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Geburtsort</td>
+              <td>Pfulendorf</td>
+            </tr>
+            <tr>
+              <td>Geburtsland</td>
+              <td>Deutschland</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <table>
+        <tbody>
+          <tr>
+            <td rowspan="4">
+            <img src="img/images.jpg" alt="Img" style="width:60px;height:60px;">
+          </td>
+            <td>Vorname/имя:</td>
+            <td>Richard</td>
+          </tr>
+          <tr>
+            <td>Geburtsname:</td>
+            <td>Rein</td>
+          </tr>
+          <tr>
+            <td>Geburtsdatum:</td>
+            <td>unbekannt</td>
+          </tr>
+          <tr>
+            <td colspan="3" align="center">
+              <button id="button_person_6_5" > Details</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="male">
+        <img src="img/Male-Symbol.png" alt="Img" style="width:10px;height:10px;">
+      </div>
+    </div>
+    <div id="person_6_6" class="person">
+      <div id="details_person_6_6" class="details" title="Details zu Ivon Heimann">
+        <table>
+          <tbody>
+            <tr>
+              <td>Ehename:</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Geburtsort</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Geburtsland</td>
+              <td>Deutschland</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <table>
+        <tbody>
+          <tr>
+            <td rowspan="4">
+            <img src="img/images.jpg" alt="Img" style="width:60px;height:60px;">
+          </td>
+            <td>Vorname/имя:</td>
+            <td>Ivon</td>
+          </tr>
+          <tr>
+            <td>Geburtsname:</td>
+            <td>Rein</td>
+          </tr>
+          <tr>
+            <td>Geburtsdatum:</td>
+            <td>00.00.0000</td>
+          </tr>
+          <tr>
+            <td colspan="3" align="center">
+              <button id="button_person_6_6" > Details</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="female">
+        <img src="img/Female_symbol.png" alt="Img" style="width:10px;height:15px;">
+      </div>
+    </div>
+    <div id="person_6_7" class="person">
+      <div id="details_person_6_7" class="details" title="Details zu David Heimann">
+        <table>
+          <tbody>
+            <tr>
+              <td>Ehename:</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Geburtsort</td>
+              <td>Weingarten</td>
+            </tr>
+            <tr>
+              <td>Geburtsland</td>
+              <td>Deutschland</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <table>
+        <tbody>
+          <tr>
+            <td rowspan="4">
+            <img src="img/images.jpg" alt="Img" style="width:60px;height:60px;">
+          </td>
+            <td>Vorname/имя:</td>
+            <td>David</td>
+          </tr>
+          <tr>
+            <td>Geburtsname:</td>
+            <td>Heimann</td>
+          </tr>
+          <tr>
+            <td>Geburtsdatum:</td>
+            <td>00.00.0000</td>
+          </tr>
+          <tr>
+            <td colspan="3" align="center">
+              <button id="button_person_6_7" > Details</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="male">
+        <img src="img/Male-Symbol.png" alt="Img" style="width:10px;height:10px;">
+      </div>
+    </div>
+  </div>
+</body>
+</html>
