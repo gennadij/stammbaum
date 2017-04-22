@@ -714,8 +714,10 @@ $(document).ready(function() {
     //EBENE 5
 
     var params_details_person_5_1 = {
-      dialog: "#details_person_5_1",
-      button: "#button_person_5_1"
+      dialog_deutsch: "#details_person_5_1_deutsch",
+      button_deutsch: "#button_person_5_1_deutsch",
+      dialog_russisch: "#details_person_5_1_russisch",
+      button_russisch: "#button_person_5_1_russisch"
     };
 
     dialog(params_details_person_5_1);
@@ -1268,8 +1270,9 @@ $(document).ready(function() {
   }
 
   function dialog(params) {
-    $( params.dialog ).dialog({
+    $( params.dialog_deutsch ).dialog({
       autoOpen: false,
+      width:'auto',
       show: {
         //effect: "blind",
         duration: 500
@@ -1280,8 +1283,25 @@ $(document).ready(function() {
       }
     });
 
-    $( params.button ).on( "click", function() {
-      $( params.dialog ).dialog( "open" );
+    $( params.button_deutsch ).on( "click", function() {
+      $( params.dialog_deutsch ).dialog( "open" );
+    });
+    
+    $( params.dialog_russisch ).dialog({
+      autoOpen: false,
+      width:'auto',
+      show: {
+        //effect: "blind",
+        duration: 500
+      },
+      hide: {
+        //effect: "explode",
+        duration: 500
+      }
+    });
+
+    $( params.button_russisch ).on( "click", function() {
+      $( params.dialog_russisch ).dialog( "open" );
     });
   }
 });
